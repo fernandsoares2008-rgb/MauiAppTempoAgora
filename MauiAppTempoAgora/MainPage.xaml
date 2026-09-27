@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppTempoAgora.MainPage"
+             Title="Tempo Agora">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Entry x:Name="txt_cidade" Placeholder="Digite o nome da cidade..." />
+
+            <Button x:Name="btn_buscar" Text="Buscar Clima" Clicked="btn_buscar_Clicked" />
+
+            <VerticalStackLayout x:Name="stk_resultado" IsVisible="False" Spacing="10" Margin="0,20,0,0">
+                <Label x:Name="lbl_cidade" FontSize="22" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Label x:Name="lbl_descricao" FontSize="18" FontAttributes="Italic" HorizontalOptions="Center" />
+                <Label x:Name="lbl_temperatura" FontSize="32" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Label x:Name="lbl_humidade" FontSize="16" />
+                <Label x:Name="lbl_vento" FontSize="16" />
+                <Label x:Name="lbl_visibilidade" FontSize="16" />
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
